@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- start robot model server -->
+  <node name="robot_model_server" pkg="l3_plugins" type="robot_model_server" respawn="true" output="screen" />
+  <rosparam file="$(find thor_mang_l3_config)/config/robot_description.yaml" command="load" />
+</launch>
