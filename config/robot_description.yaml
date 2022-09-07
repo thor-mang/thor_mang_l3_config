@@ -1,5 +1,7 @@
 robot_model:
   description:
+    robot_description: "johnny5/robot_description"
+
     ### upper body settings ########################################################
     bases:
       - idx: 0
@@ -66,7 +68,6 @@ robot_model:
     kinematics:
       name: kdl_kinematics
       params:
-        robot_description: "johnny5/robot_description"
         root_link: "base_link"
     gait_generator:
       name: bipedal_gait_generator
